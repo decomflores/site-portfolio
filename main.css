@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: normal;
+    color: #fff;
+    background-image: url(./media/imagens/background.png);
+    background-size: cover;
+}
+
+/* CABEÇALHO */
+
+header {
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: #1f1f20;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.menu-desktop ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-desktop ul li {
+    margin-right: 30px;
+}
+
+.menu-desktop ul li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.menu-desktop ul li a {
+    color:#fff;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;
+    font-size: 24px;
+}
+
+header button {
+    background-color: #567ebb;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+}
+
+header button:hover {
+    background-color: #2b4c7e;
+    transition: 0.3s;
+    font-weight: bold;
+    transform: translateY(-3px);
+}
+
+header button a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Kanit";
+    font-size: 18px;
+}
+
+/* FIM DO CABEÇALHO */
+
+/* TOPO DA PÁGINA */
+
+.topo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+.topo img {
+    max-width: 300px;
+}
+
+.topo .hd-left {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kanit";
+}
+
+.topo .hd-left h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.topo .hd-left p {
+    font-size: 24px;
+    max-width: 600px;
+    font-family: Pridi;
+}
+
+/* ANIMAÇÃO */
+
+.topo .hd-right img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* FIM ANIMAÇÃO */
+
+/* FIM DO TOPO DA PÁGINA */
+
+main h2 {
+    font-family: "Kanit";
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+/* SOBRE MIM */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobre p {
+    max-width: 900px;
+    font-family: Pridi;
+    font-size: 24px;
+}
+
+/* FIM SOBRE MIM */
+
+/* PROJETOS */
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projetos .proj-itens {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.proj-1 {
+    width: 180px;
+    height: 300px;
+    background-image: url(./media/imagens/site-fernanda.jpg);
+    background-position: 100% 0%;
+    background-size: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 6s;
+}
+
+.proj-1:hover {
+    background-position: 100% 100%;
+}
+
+/* FIM PROJETOS */
+
+/* CONTATO */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato form input,
+.contato form textarea {
+    margin: 15px auto;
+    width: 400px;
+    font-size: 18px;
+    font-family: Pridi;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.contato .form textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+.form input:hover,
+.form textarea:hover {
+    outline: none;
+    border-color: #2b4c7e;
+    transition: 0.3s;
+}
+
+.contato button {
+    background-color: #567ebb;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 999px;
+}
+
+.contato button:hover {
+    background-color: #2b4c7e;
+    transition: 0.3s;
+    font-weight: bold;
+    transform: translateY(-3px);
+}
+
+.btn-form button a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Kanit";
+    font-size: 18px;
+}
+
+/* FIM CONTATO */
+
+/* LINKS */
+
+.links > div {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    margin: 40px auto;
+}
+
+.links .git-hub {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.links .git-hub a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Pridi;
+    font-size: 18px;
+}
+
+.links img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.links img:hover,
+.links .git-hub p:hover {
+    transform: translateY(-3px);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/* FIM LINKS */
+
+/* RODAPE */
+
+.rodape {
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-family: Oswald;
+}
+
+/* FIM RODAPE */
